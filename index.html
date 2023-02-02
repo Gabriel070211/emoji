@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   
+    <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1> O emoji descobre tudo 
+            <br>
+            <span>&#128522;</span>
+            <span>&#128512;</span>
+            <span>&#128532;</span>
+            <span>&#128546;</span>
+            <span>&#128545;</span>
+            <span>&#128548;</span>
+        </h1>
+        <p>
+            Tire sua selfie para gerar o emoji adivinhador
+            <br>
+            <b style="color:aquamarine">voce esta feliz o emoji vai acertar</b>
+            <br>
+            <b style="color:darkorchid">voce esta triste o emoji vai acertar</b>
+            <br>
+            <b style="color:blue">voce esta irritado o emoji vai acertar</b>
+        </p>
+        <div class="col-md-4 col-sm-12 col-xs-12"> 
+            <label id="div-1" >Visualizacao da webcam</label>
+            <div id="camera"></div>
+            <br>
+            <button onclick="takeSnapshot()"> capturar imagem</button>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12" >
+            <label id="div-2">previsao 1</label>
+            <p class="emotion-name" id="result-emotion-name"></p>
+            <p class="emoji" id="update-emoji"></p>
+
+           
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12" > 
+            <label id="div-4">Foto</label>
+            <div id="result"></div>
+            <br>
+            <button onclick="check()"> Prever emoçao</button>
+        </div>
+        
+        
+    </div>
+    <script src="main.js"> </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
